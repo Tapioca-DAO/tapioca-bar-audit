@@ -1,6 +1,6 @@
 [submodule "contracts/yieldbox"]
 	path = contracts/yieldbox
-	url = https://github.com/boringcrypto/YieldBox.git
+	url = https://github.com/Tapioca-DAO/YieldBox.git
 [submodule "gitsub_tapioca-sdk"]
 	path = gitsub_tapioca-sdk
 	url = https://github.com/Tapioca-DAO/tapioca-sdk-audit.git
