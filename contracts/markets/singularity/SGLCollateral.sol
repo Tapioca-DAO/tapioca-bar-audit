@@ -3,6 +3,8 @@ pragma solidity ^0.8.18;
 
 import "./SGLLendingCommon.sol";
 
+/// @title Singularity collateral module
+/// @notice Singularity module for collateral type actions
 contract SGLCollateral is SGLLendingCommon {
     using RebaseLibrary for Rebase;
     using BoringERC20 for IERC20;

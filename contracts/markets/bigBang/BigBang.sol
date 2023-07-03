@@ -26,6 +26,16 @@ __/\\\\\\\\\\\\\\\_____/\\\\\\\\\_____/\\\\\\\\\\\\\____/\\\\\\\\\\\_______/\\\\
 
 */
 
+/// @title BigBang market
+/// @notice Adaptation of the Singularity contract
+/// @dev owner of the contract is Penrose
+///     - the borrow action performs a mint on USDO
+///     - the repay action performs a burn on USDO
+///     - interest rate is not fixed, but dynamic based on the main BigBang market, minDebtRate, maxDebtRate and debtRateAgainstEthMarket
+///         - BigBang markets can either be main or secondary markets; the main market is set on Penrose and has a fixed rate
+///         - BigBang secondary markets has a dynamic interest rate which is starts from `minDebtRate` to `maxDebtRate`
+///             - if current debt is over _maxDebtPoint = (_ethMarketTotalDebt * debtRateAgainstEthMarket) / 1e18, the interest rate is automatically `maxDebtRate`
+///         - simulation: https://dotnetfiddle.net/cuKVpf
 contract BigBang is BoringOwnable, Market {
     using RebaseLibrary for Rebase;
     using BoringERC20 for IERC20;

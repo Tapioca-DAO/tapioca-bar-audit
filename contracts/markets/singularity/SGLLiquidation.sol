@@ -5,6 +5,8 @@ import "./SGLCommon.sol";
 
 // solhint-disable max-line-length
 
+/// @title Singularity liquidation module
+/// @notice Singularity module for liquidation type actions
 contract SGLLiquidation is SGLCommon {
     using RebaseLibrary for Rebase;
     using BoringERC20 for IERC20;

@@ -16,6 +16,8 @@ import "tapioca-periph/contracts/interfaces/IPermitAll.sol";
 
 import "../BaseUSDOStorage.sol";
 
+/// @title USDO market module
+/// @notice USDO module for market type actions
 contract USDOMarketModule is BaseUSDOStorage {
     using RebaseLibrary for Rebase;
     using SafeERC20 for IERC20;

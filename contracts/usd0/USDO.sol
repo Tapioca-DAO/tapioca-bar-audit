@@ -20,6 +20,7 @@ __/\\\\\\\\\\\\\\\_____/\\\\\\\\\_____/\\\\\\\\\\\\\____/\\\\\\\\\\\_______/\\\\
 */
 
 /// @title USDO OFT contract
+/// @notice Tapioca omnichain stablecoin
 contract USDO is BaseUSDO, IERC3156FlashLender {
     modifier notPaused() {
         require(!paused, "USDO: paused");

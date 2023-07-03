@@ -5,6 +5,8 @@ import "./SGLLendingCommon.sol";
 import {IUSDOBase} from "tapioca-periph/contracts/interfaces/IUSDO.sol";
 import {ITapiocaOFT} from "tapioca-periph/contracts/interfaces/ITapiocaOFT.sol";
 
+/// @title Singularity leverage module
+/// @notice Singularity module for leverage type actions
 contract SGLLeverage is SGLLendingCommon {
     using RebaseLibrary for Rebase;
     using BoringERC20 for IERC20;

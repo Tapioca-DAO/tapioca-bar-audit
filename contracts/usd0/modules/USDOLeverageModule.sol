@@ -14,6 +14,8 @@ import "tapioca-periph/contracts/interfaces/IPermitAll.sol";
 
 import "../BaseUSDOStorage.sol";
 
+/// @title USDO leverage module
+/// @notice USDO module for leverage type actions
 contract USDOLeverageModule is BaseUSDOStorage {
     using SafeERC20 for IERC20;
 

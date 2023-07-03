@@ -3,6 +3,9 @@ pragma solidity ^0.8.18;
 
 import "./SGLStorage.sol";
 
+/// @title Singularity Common
+/// @notice Singularity market common module
+/// @dev this module is implemented by all the others
 contract SGLCommon is SGLStorage {
     using RebaseLibrary for Rebase;
 
