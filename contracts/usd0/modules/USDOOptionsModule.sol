@@ -11,6 +11,8 @@ import "tapioca-periph/contracts/interfaces/ITapiocaOptionsBroker.sol";
 import "tapioca-periph/contracts/interfaces/ISendFrom.sol";
 import "../BaseUSDOStorage.sol";
 
+/// @title USDO options module
+/// @notice USDO module for oTap type actions
 contract USDOOptionsModule is BaseUSDOStorage {
     using SafeERC20 for IERC20;
 

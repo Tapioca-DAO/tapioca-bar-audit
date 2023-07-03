@@ -40,6 +40,10 @@ import "./modules/USDOOptionsModule.sol";
 //         ####*  (((((((((((((((((((
 //                     ,**//*,.
 
+
+/// @title BaseUSDO contract 
+/// @notice Common USDO capabilitites
+/// @dev all LayerZero methods are defined here
 contract BaseUSDO is BaseUSDOStorage, ERC20Permit {
     using SafeERC20 for IERC20;
     using BytesLib for bytes;

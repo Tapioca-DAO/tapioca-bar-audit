@@ -26,7 +26,14 @@ __/\\\\\\\\\\\\\\\_____/\\\\\\\\\_____/\\\\\\\\\\\\\____/\\\\\\\\\\\_______/\\\\
 
 */
 
-/// @title Tapioca market
+/// @title Singularity market
+/// @notice Main Tapioca market
+/// @dev owner of the contract is Penrose
+///     - contract is split in modules because of the size limit
+///         - each module is responsible with a specific part of the market
+///     - when action is executed, a `delegatecall` is performed to the right module
+///     - adding assets to the contract, mints shares to the `to` address which can later be used in the oTap & twTap system
+///     - interest rate is automatically updated based on the interest elasticity time and it's bounded by `minimumInterestPerSecond` and `maximumInterestPerSecond`
 contract Singularity is SGLCommon {
     using RebaseLibrary for Rebase;
 

@@ -12,6 +12,8 @@ import "@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol";
 import "tapioca-periph/contracts/interfaces/IYieldBoxBase.sol";
 import {IUSDOBase} from "tapioca-periph/contracts/interfaces/IUSDO.sol";
 
+/// @title USDO storage module
+/// @notice USDO storage 
 contract BaseUSDOStorage is OFTV2 {
     /// @notice the YieldBox address.
     IYieldBoxBase public immutable yieldBox;

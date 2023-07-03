@@ -3,6 +3,8 @@ pragma solidity ^0.8.18;
 
 import "./SGLLendingCommon.sol";
 
+/// @title Singularity borrow module
+/// @notice Singularity module for borrow type actions
 contract SGLBorrow is SGLLendingCommon {
     using RebaseLibrary for Rebase;
     using BoringERC20 for IERC20;
