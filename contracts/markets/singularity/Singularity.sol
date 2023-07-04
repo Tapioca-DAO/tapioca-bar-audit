@@ -124,7 +124,7 @@ contract Singularity is SGLCommon {
         borrowOpeningFee = 50; // 0.05%
 
         //liquidation
-        liquidationMultiplier = 112000; //12%
+        liquidationMultiplier = 12000; //12%
 
         collateralizationRate = 75000;
         lqCollateralizationRate = 25000;
@@ -552,7 +552,7 @@ contract Singularity is SGLCommon {
 
         if (_lqCollateralizationRate > 0) {
             require(
-                _lqCollateralizationRate <= COLLATERALIZATION_RATE_PRECISION,
+                _lqCollateralizationRate <= FEE_PRECISION,
                 "SGL: not valid"
             );
             emit LqCollateralizationRateUpdated(
@@ -563,6 +563,7 @@ contract Singularity is SGLCommon {
         }
 
         if (_liquidationMultiplier > 0) {
+            require(_liquidationMultiplier < FEE_PRECISION, "SGL: not valid");
             emit LiquidationMultiplierUpdated(
                 liquidationMultiplier,
                 _liquidationMultiplier
