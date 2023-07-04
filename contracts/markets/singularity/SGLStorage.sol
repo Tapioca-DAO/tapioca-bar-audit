@@ -30,7 +30,7 @@ __/\\\\\\\\\\\\\\\_____/\\\\\\\\\_____/\\\\\\\\\\\\\____/\\\\\\\\\\\_______/\\\\
 */
 
 /// @title Singularity storage module
-/// @notice Singularity storage 
+/// @notice Singularity storage
 contract SGLStorage is BoringOwnable, Market {
     using RebaseLibrary for Rebase;
     using BoringERC20 for IERC20;

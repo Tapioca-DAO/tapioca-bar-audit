@@ -20,7 +20,7 @@ __/\\\\\\\\\\\\\\\_____/\\\\\\\\\_____/\\\\\\\\\\\\\____/\\\\\\\\\\\_______/\\\\
 */
 
 /// @title Market ERC20 contract
-/// @notice Market ERC20 capabilitites 
+/// @notice Market ERC20 capabilitites
 contract MarketERC20 is IERC20, IERC20Permit, EIP712 {
     // ************ //
     // *** VARS *** //

@@ -13,7 +13,7 @@ import "tapioca-periph/contracts/interfaces/IYieldBoxBase.sol";
 import {IUSDOBase} from "tapioca-periph/contracts/interfaces/IUSDO.sol";
 
 /// @title USDO storage module
-/// @notice USDO storage 
+/// @notice USDO storage
 contract BaseUSDOStorage is OFTV2 {
     /// @notice the YieldBox address.
     IYieldBoxBase public immutable yieldBox;
